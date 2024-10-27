@@ -1,124 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FTC Team 21959 Website</title>
+    <title>FTC Team 21959 Dreamers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>FTC Team 21959 Dreamers</h1>
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="img/logo.svg" alt="Dreamers Logo">
+                <span class="logo-text">Dreamers</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+                <a href="#impact"><i class="fas fa-chart-line"></i> Impact</a>
+                <a href="#team"><i class="fas fa-users"></i> Team</a>
+                <a href="#awards"><i class="fas fa-trophy"></i> Awards</a>
+                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
         </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul> 
-        </nav>
-    </header>
+    </nav>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
+    <section class="hero">
+        <div class="container">
             <div class="hero-content">
-                <h2>Welcome to FTC 21959</h2>
-                <p>Your placeholder for an inspiring slogan or mission statement.</p>
-                <button>Explore More</button>
-            </div>
-        </section>
-        
-        <!-- About Us Section -->
-        <section id="about" class="about">
-            <h2>About Us</h2>
-            <p>Placeholder text for a brief introduction about the team. Share your vision, goals, and achievements here.</p>
-            <div class="about-grid">
-                <div class="about-item">
-                    <h3>Our Mission</h3>
-                    <p>Placeholder for mission statement or value proposition.</p>
+                <div class="hero-text">
+                    <h1>FTC Team 21959<br>Dreamers</h1>
+                    <p>Innovating, competing, and inspiring through robotics. We are a passionate team of high school students dedicated to pushing the boundaries of technology and engineering.</p>
+                    <a href="#contact" class="cta-button">
+                        <i class="fas fa-rocket"></i>
+                        Join Our Journey
+                    </a>
                 </div>
-                <div class="about-item">
-                    <h3>Achievements</h3>
-                    <p>Placeholder for listing key achievements.</p>
-                </div>
-                <div class="about-item">
-                    <h3>Future Goals</h3>
-                    <p>Placeholder for outlining future aspirations.</p>
+                <div class="hero-image-container">
+                    <img src="img/group-photo.jpg" alt="Team Dreamers in their workshop" class="hero-image">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="placeholder.jpg" alt="Placeholder project image">
-                    </div>
-                    <div class="project-info">
-                        <h3>Project Title 1</h3>
-                        <p>Short description of the project.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="placeholder.jpg" alt="Placeholder project image">
-                    </div>
-                    <div class="project-info">
-                        <h3>Project Title 2</h3>
-                        <p>Short description of the project.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="placeholder.jpg" alt="Placeholder project image">
-                    </div>
-                    <div class="project-info">
-                        <h3>Project Title 3</h3>
-                        <p>Short description of the project.</p>
-                    </div>
+    <section id="about" class="section">
+        <div class="container">
+            <h2><i class="fas fa-info-circle"></i> About Us</h2>
+            <div class="about-us">
+                <img src="img/about-us.jpg" alt="Team Dreamers working on a robot" class="about-image">
+                <div class="about-text">
+                    <p>FTC Team 21959 Dreamers is a group of passionate high school students dedicated to exploring the frontiers of robotics and engineering. Founded in 2022, our team has quickly grown into a powerhouse of innovation and creativity.</p>
+                    <p>We believe in the power of STEM education and strive to inspire the next generation of engineers and scientists through our outreach programs and competitive achievements.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Team Section -->
-        <section id="team" class="team">
-            <h2>Meet the Team</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="placeholder.jpg" alt="Placeholder for team member">
-                    <h3>Team Member 1</h3>
-                    <p>Position or Role</p>
+    <section id="impact" class="section">
+        <div class="container">
+            <h2><i class="fas fa-chart-line"></i> Our Impact</h2>
+            <div class="stats">
+                <div class="stat-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>24+</h3>
+                    <p>Competition Matches</p>
                 </div>
-                <div class="team-member">
-                    <img src="placeholder.jpg" alt="Placeholder for team member">
-                    <h3>Team Member 2</h3>
-                    <p>Position or Role</p>
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3>15+</h3>
+                    <p>Team Members</p>
                 </div>
-                <div class="team-member">
-                    <img src="placeholder.jpg" alt="Placeholder for team member">
-                    <h3>Team Member 3</h3>
-                    <p>Position or Role</p>
+                <div class="stat-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>1000+</h3>
+                    <p>Hours of Engineering</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <h2>Contact Us</h2>
-            <p>Please reach out to use through our mail at: <a href="mailto:contact@21959.com.cn">contact@21959.com.cn</a></p>
-            <button>Send Message</button>
-        </section>
-    </main>
+    <section id="team" class="section">
+        <div class="container">
+            <h2><i class="fas fa-users"></i> Meet Our Team</h2>
+            <div class="team-members">
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="path/to/member1-image.jpg" alt="Team Member 1">
+                    </div>
+                    <h3 class="member-name">John Doe</h3>
+                    <p class="member-role">Team Captain</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="path/to/member1-image.jpg" alt="Team Member 1">
+                    </div>
+                    <h3 class="member-name">John Doe</h3>
+                    <p class="member-role">Team Captain</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="path/to/member1-image.jpg" alt="Team Member 1">
+                    </div>
+                    <h3 class="member-name">John Doe</h3>
+                    <p class="member-role">Team Captain</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="path/to/member1-image.jpg" alt="Team Member 1">
+                    </div>
+                    <h3 class="member-name">John Doe</h3>
+                    <p class="member-role">Team Captain</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="path/to/member1-image.jpg" alt="Team Member 1">
+                    </div>
+                    <h3 class="member-name">John Doe</h3>
+                    <p class="member-role">Team Captain</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="path/to/member1-image.jpg" alt="Team Member 1">
+                    </div>
+                    <h3 class="member-name">John Doe</h3>
+                    <p class="member-role">Team Captain</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="path/to/member1-image.jpg" alt="Team Member 1">
+                    </div>
+                    <h3 class="member-name">John Doe</h3>
+                    <p class="member-role">Team Captain</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="path/to/member1-image.jpg" alt="Team Member 1">
+                    </div>
+                    <h3 class="member-name">John Doe</h3>
+                    <p class="member-role">Team Captain</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="path/to/member1-image.jpg" alt="Team Member 1">
+                    </div>
+                    <h3 class="member-name">John Doe</h3>
+                    <p class="member-role">Team Captain</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="path/to/member1-image.jpg" alt="Team Member 1">
+                    </div>
+                    <h3 class="member-name">John Doe</h3>
+                    <p class="member-role">Team Captain</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="path/to/member1-image.jpg" alt="Team Member 1">
+                    </div>
+                    <h3 class="member-name">John Doe</h3>
+                    <p class="member-role">Team Captain</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-img">
+                        <img src="path/to/member1-image.jpg" alt="Team Member 1">
+                    </div>
+                    <h3 class="member-name">John Doe</h3>
+                    <p class="member-role">Team Captain</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="awards" class="section">
+        <div class="container">
+            <h2><i class="fas fa-trophy"></i> Our Awards</h2>
+            <div class="awards-toggle">
+                <button class="active" data-year="2022-2023">2022-2023</button>
+                <button data-year="2023-2024">2023-2024</button>
+                <button data-year="2024-2025">2024-2025</button>
+            </div>
+            <div class="awards-content active" id="2022-2023">
+                <h3>2022-2023 Season</h3>
+                <ul>
+                    <li>Regional Champions</li>
+                    <li>Innovation in Control Award</li>
+                    <li>Connect Award</li>
+                </ul>
+            </div>
+            <div class="awards-content" id="2023-2024">
+                <h3>2023-2024 Season</h3>
+                <ul>
+                    <li>State Finalists</li>
+                    <li>Think Award</li>
+                    <li>Design Award</li>
+                </ul>
+            </div>
+            <div class="awards-content" id="2024-2025">
+                <h3>2024-2025 Season</h3>
+                <p>Our journey continues! Stay tuned for our achievements in the upcoming season.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+            <div class="contact-info">
+                <p>Get in touch with us at: <a href="mailto:contact@21959.com.cn">contact@21959.com.cn</a></p>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2024 FTC Team 21959 Dreamers. All rights reserved.</p>
+        <div class="container">
+            <p>© 2024 FTC Team 21959 Dreamers. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
