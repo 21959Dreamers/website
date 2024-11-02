@@ -9,181 +9,124 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <div class="logo">
-                <img src="img/logo.svg" alt="Dreamers Logo">
-                <span class="logo-text">Dreamers</span>
+    <header>
+        <nav aria-label="Main Navigation">
+            <div class="container">
+                <div class="logo">
+                    <img src="img/logo.svg" alt="FTC Team 21959 Dreamers Logo">
+                    <span class="logo-text">Dreamers</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+                    <a href="#team"><i class="fas fa-users"></i> Team</a>
+                    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+                </div>
+                <div class="menu-toggle" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
-            <div class="nav-links">
-                <a href="#about"><i class="fas fa-info-circle"></i> About</a>
-                <a href="#team"><i class="fas fa-users"></i> Team</a>
-                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
-            </div>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>
-                        <span class="small-text">FTC Team</span>
-                        <span class="gradient-text">21959 Dreamers</span>
-                    </h1>
-                    <p>Innovating, competing, and inspiring through robotics. We are a passionate team of high school students dedicated to pushing the boundaries of technology and engineering.</p>
-                    <a href="#about" class="cta-button">
-                        <i class="fas fa-rocket"></i>
-                        Learn More
-                    </a>
-                </div>
-                <div class="hero-image-container">
-                    <img src="img/group-photo.jpg" alt="Team Dreamers in their workshop" class="hero-image">
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 id="hero-title">
+                            <span class="small-text">FTC Team</span>
+                            <span class="gradient-text">21959 Dreamers</span>
+                        </h1>
+                        <p>Innovating, competing, and inspiring through robotics. We are a passionate team of high school students dedicated to pushing the boundaries of technology and engineering.</p>
+                        <a href="#about" class="cta-button">
+                            <i class="fas fa-rocket"></i>
+                            Learn More
+                        </a>
+                    </div>
+                    <div class="hero-image-container">
+                        <img src="img/group-photo.jpg" alt="Team Dreamers working in their workshop" class="hero-image">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2><i class="fas fa-info-circle"></i> About Us</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>FTC Team 21959 Dreamers is a group of passionate high school students dedicated to exploring the frontiers of robotics and engineering. Founded in 2022, our team has quickly grown into a powerhouse of innovation and creativity.</p>
-                    <div class="achievements">
-                        <h3>Our Achievements</h3>
-                        <div class="achievement-year">2023-2024</div>
-                        <ul class="achievement-list">
-                            <li>State Finalists</li>
-                            <li>Think Award</li>
-                        </ul>
-                        <div class="achievement-year">2022-2023</div>
-                        <ul class="achievement-list">
-                            <li>Regional Champions</li>
-                            <li>Innovation in Control Award</li>
-                        </ul>
+        <section id="about" class="section" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title"><i class="fas fa-info-circle"></i> About Us</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>FTC Team 21959 Dreamers is a group of passionate high school students dedicated to exploring the frontiers of robotics and engineering. Founded in 2022, our team has quickly grown into a powerhouse of innovation and creativity.</p>
+                        <div class="achievements">
+                            <h3>Our Achievements</h3>
+                            <div class="achievement-year">2023-2024</div>
+                            <ul class="achievement-list">
+                                <li>State Finalists</li>
+                                <li>Think Award</li>
+                            </ul>
+                            <div class="achievement-year">2022-2023</div>
+                            <ul class="achievement-list">
+                                <li>Regional Champions</li>
+                                <li>Innovation in Control Award</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="stats">
-                    <div class="stat-card">
-                        <i class="fas fa-robot"></i>
-                        <h3>24+</h3>
-                        <p>Competition Matches</p>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fas fa-users"></i>
-                        <h3>12</h3>
-                        <p>Team Members</p>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fas fa-clock"></i>
-                        <h3>1000+</h3>
-                        <p>Hours of Engineering</p>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fas fa-trophy"></i>
-                        <h3>4</h3>
-                        <p>Major Awards</p>
+                    <div class="stats">
+                        <div class="stat-card">
+                            <i class="fas fa-robot"></i>
+                            <h3>24+</h3>
+                            <p>Competition Matches</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-users"></i>
+                            <h3>12</h3>
+                            <p>Team Members</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-clock"></i>
+                            <h3>1000+</h3>
+                            <p>Hours of Engineering</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-trophy"></i>
+                            <h3>4</h3>
+                            <p>Major Awards</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="team" class="section">
-        <div class="container">
-            <h2><i class="fas fa-users"></i> Meet Our Team</h2>
-            <div class="team-members">
-                <div class="member-card">
-                    <div class="member-img">
-                        <img src="img/member1.jpg" alt="Team Member 1">
+        <section id="team" class="section" aria-labelledby="team-title">
+            <div class="container">
+                <h2 id="team-title"><i class="fas fa-users"></i> Meet Our Team</h2>
+                <div class="team-members" role="list">
+                    <!-- Repeat this block 12 times for each team member -->
+                    <div class="member-card" role="listitem">
+                        <div class="member-img">
+                            <img src="img/member1.jpg" alt="Team Member 1 - John Doe" />
+                        </div>
+                        <h3 class="member-name">John Doe</h3>
+                        <p class="member-role">Team Captain</p>
                     </div>
-                    <h3 class="member-name">Zigao Wang</h3>
-                    <p class="member-role">Outreach Captain</p>
-                </div>
-                <div class="member-card">
-                    <div class="member-img">
-                        <img src="img/member1.jpg" alt="Team Member 2">
-                    </div>
-                    <h3 class="member-name">John Doe</h3>
-                    <p class="member-role">Team Captain</p>
-                </div>
-                <div class="member-card">
-                    <div class="member-img">
-                        <img src="img/member1.jpg" alt="Team Member 2">
-                    </div>
-                    <h3 class="member-name">John Doe</h3>
-                    <p class="member-role">Team Captain</p>
-                </div>
-                <div class="member-card">
-                    <div class="member-img">
-                        <img src="img/member1.jpg" alt="Team Member 2">
-                    </div>
-                    <h3 class="member-name">John Doe</h3>
-                    <p class="member-role">Team Captain</p>
-                </div>
-                <div class="member-card">
-                    <div class="member-img">
-                        <img src="img/member1.jpg" alt="Team Member 2">
-                    </div>
-                    <h3 class="member-name">John Doe</h3>
-                    <p class="member-role">Team Captain</p>
-                </div>
-                <div class="member-card">
-                    <div class="member-img">
-                        <img src="img/member1.jpg" alt="Team Member 2">
-                    </div>
-                    <h3 class="member-name">John Doe</h3>
-                    <p class="member-role">Team Captain</p>
-                </div>
-                <div class="member-card">
-                    <div class="member-img">
-                        <img src="img/member1.jpg" alt="Team Member 2">
-                    </div>
-                    <h3 class="member-name">John Doe</h3>
-                    <p class="member-role">Team Captain</p>
-                </div>
-                <div class="member-card">
-                    <div class="member-img">
-                        <img src="img/member1.jpg" alt="Team Member 2">
-                    </div>
-                    <h3 class="member-name">John Doe</h3>
-                    <p class="member-role">Team Captain</p>
-                </div>
-                <div class="member-card">
-                    <div class="member-img">
-                        <img src="img/member1.jpg" alt="Team Member 2">
-                    </div>
-                    <h3 class="member-name">John Doe</h3>
-                    <p class="member-role">Team Captain</p>
-                </div>
-                <div class="member-card">
-                    <div class="member-img">
-                        <img src="img/member1.jpg" alt="Team Member 2">
-                    </div>
-                    <h3 class="member-name">John Doe</h3>
-                    <p class="member-role">Team Captain</p>
+                    <!-- Add 11 more member cards here -->
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2><i class="fas fa-envelope"></i> Contact Us</h2>
-            <div class="contact-info">
-                <p>Get in touch with us at: <a href="mailto:contact@21959.com.cn">contact@21959.com.cn</a></p>
+        <section id="contact" class="section" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title"><i class="fas fa-envelope"></i> Contact Us</h2>
+                <div class="contact-info">
+                    <p>Get in touch with us at: <a href="mailto:contact@21959.com.cn">contact@21959.com.cn</a></p>
+                </div>
+                <div class="social-links" role="navigation" aria-label="Social Media Links">
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
             </div>
-            <div class="social-links">
-                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
