@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="language-modal" class="modal">
+        <div class="modal-content">
+            <h4>Please Select Your Language</h4>
+            <h4>请选择您的语言</h4>
+            <div class="language-options">
+                <button id="en-btn" class="language-button">🇬🇧 English</button>
+                <button id="cn-btn" class="language-button">🇨🇳 中文</button>
+            </div>
+        </div>
+    </div>
+
     <header>
         <nav aria-label="Main Navigation">
             <div class="container">
@@ -17,12 +28,16 @@
                     <span class="logo-text">Dreamers</span>
                 </div>
                 <div class="nav-links">
-                    <a href="#about"><i class="fas fa-info-circle"></i> About</a>
-                    <a href="#team"><i class="fas fa-users"></i> Team</a>
-                    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+                    <a href="#about"><i class="fas fa-info-circle"></i> <span data-en="About" data-cn="关于">About</span></a>
+                    <a href="#team"><i class="fas fa-users"></i> <span data-en="Team" data-cn="团队">Team</span></a>
+                    <a href="#contact"><i class="fas fa-envelope"></i> <span data-en="Contact" data-cn="联系">Contact</span></a>
                 </div>
                 <div class="menu-toggle" aria-label="Toggle navigation menu">
                     <i class="fas fa-bars"></i>
+                </div>
+                <div class="language-toggle">
+                    <button id="toggle-en-btn" class="language-button">🇬🇧 English</button>
+                    <button id="toggle-cn-btn" class="language-button">🇨🇳 中文</button>
                 </div>
             </div>
         </nav>
@@ -34,13 +49,16 @@
                 <div class="hero-content">
                     <div class="hero-text">
                         <h1 id="hero-title">
-                            <span class="small-text">FTC Team</span>
-                            <span class="gradient-text">21959 Dreamers</span>
+                            <span class="small-text" data-en="FTC Team" data-cn="FTC团队">FTC Team</span>
+                            <span class="gradient-text" data-en="21959 Dreamers" data-cn="21959梦想者">21959 Dreamers</span>
                         </h1>
-                        <p>Innovating, competing, and inspiring through robotics. We are a passionate team of high school students dedicated to pushing the boundaries of technology and engineering.</p>
+                        <p data-en="Innovating, competing, and inspiring through robotics. We are a passionate team of high school students dedicated to pushing the boundaries of technology and engineering." 
+                           data-cn="通过机器人技术进行创新、竞争和启发。我们是一支充满热情的高中生团队，致力于推动技术和工程的边界。">
+                           Innovating, competing, and inspiring through robotics. We are a passionate team of high school students dedicated to pushing the boundaries of technology and engineering.
+                        </p>
                         <a href="#about" class="cta-button">
                             <i class="fas fa-rocket"></i>
-                            Learn More
+                            <span data-en="Learn More" data-cn="了解更多">Learn More</span>
                         </a>
                     </div>
                     <div class="hero-image-container">
@@ -49,24 +67,27 @@
                 </div>
             </div>
         </section>
-
+    
         <section id="about" class="section" aria-labelledby="about-title">
             <div class="container">
-                <h2 id="about-title"><i class="fas fa-info-circle"></i> About Us</h2>
+                <h2 id="about-title"><i class="fas fa-info-circle"></i> <span data-en="About Us" data-cn="关于我们">About Us</span></h2>
                 <div class="about-content">
                     <div class="about-text">
-                        <p>FTC Team 21959 Dreamers is a group of passionate high school students dedicated to exploring the frontiers of robotics and engineering. Founded in 2022, our team has quickly grown into a powerhouse of innovation and creativity.</p>
+                        <p data-en="FTC Team 21959 Dreamers is a group of passionate high school students dedicated to exploring the frontiers of robotics and engineering. Founded in 2022, our team has quickly grown into a powerhouse of innovation and creativity." 
+                           data-cn="FTC团队21959梦想者是一群充满热情的高中生，致力于探索机器人和工程的前沿。成立于2022年，我们的团队迅速成长为创新和创造力的强大力量。">
+                           FTC Team 21959 Dreamers is a group of passionate high school students dedicated to exploring the frontiers of robotics and engineering. Founded in 2022, our team has quickly grown into a powerhouse of innovation and creativity.
+                        </p>
                         <div class="achievements">
-                            <h3>Our Achievements</h3>
+                            <h3 data-en="Our Achievements" data-cn="我们的成就">Our Achievements</h3>
                             <div class="achievement-year">2023-2024</div>
                             <ul class="achievement-list">
-                                <li>State Finalists</li>
-                                <li>Think Award</li>
+                                <li data-en="State Finalists" data-cn="州决赛选手">State Finalists</li>
+                                <li data-en="Think Award" data-cn="思维奖">Think Award</li>
                             </ul>
                             <div class="achievement-year">2022-2023</div>
                             <ul class="achievement-list">
-                                <li>Regional Champions</li>
-                                <li>Innovation in Control Award</li>
+                                <li data-en="Regional Champions" data-cn="区域冠军">Regional Champions</li>
+                                <li data-en="Innovation in Control Award" data-cn="控制创新奖">Innovation in Control Award</li>
                             </ul>
                         </div>
                     </div>
@@ -74,50 +95,48 @@
                         <div class="stat-card">
                             <i class="fas fa-robot"></i>
                             <h3>24+</h3>
-                            <p>Competition Matches</p>
+                            <p data-en="Competition Matches" data-cn="比赛场次">Competition Matches</p>
                         </div>
                         <div class="stat-card">
                             <i class="fas fa-users"></i>
                             <h3>12</h3>
-                            <p>Team Members</p>
+                            <p data-en="Team Members" data-cn="团队成员">Team Members</p>
                         </div>
                         <div class="stat-card">
                             <i class="fas fa-clock"></i>
                             <h3>1000+</h3>
-                            <p>Hours of Engineering</p>
+                            <p data-en="Hours of Engineering" data-cn="工程时长">Hours of Engineering</p>
                         </div>
                         <div class="stat-card">
                             <i class="fas fa-trophy"></i>
                             <h3>4</h3>
-                            <p>Major Awards</p>
+                            <p data-en="Major Awards" data-cn="主要奖项">Major Awards</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
+    
         <section id="team" class="section" aria-labelledby="team-title">
             <div class="container">
-                <h2 id="team-title"><i class="fas fa-users"></i> Meet Our Team</h2>
+                <h2 id="team-title"><i class="fas fa-users"></i> <span data-en="Meet Our Team" data-cn="认识我们的团队">Meet Our Team</span></h2>
                 <div class="team-members" role="list">
-                    <!-- Repeat this block 12 times for each team member -->
                     <div class="member-card" role="listitem">
                         <div class="member-img">
-                            <img src="img/member1.jpg" alt="Team Member 1 - John Doe" />
+                            <img src="img/member1.jpg" alt="Team Member 1 - Zigao Wang" />
                         </div>
-                        <h3 class="member-name">John Doe</h3>
-                        <p class="member-role">Team Captain</p>
+                        <h3 class="member-name">Zigao Wang</h3>
+                        <p class="member-role" data-en="Team Captain" data-cn="队长">Team Captain</p>
                     </div>
-                    <!-- Add 11 more member cards here -->
                 </div>
             </div>
         </section>
-
+    
         <section id="contact" class="section" aria-labelledby="contact-title">
             <div class="container">
-                <h2 id="contact-title"><i class="fas fa-envelope"></i> Contact Us</h2>
+                <h2 id="contact-title"><i class="fas fa-envelope"></i> <span data-en="Contact Us" data-cn="联系我们">Contact Us</span></h2>
                 <div class="contact-info">
-                    <p>Get in touch with us at: <a href="mailto:contact@21959.com.cn">contact@21959.com.cn</a></p>
+                    <p data-en="Get in touch with us at: " data-cn="与我们联系: ">Get in touch with us at: <a href="mailto:contact@21959.com.cn">contact@21959.com.cn</a></p>
                 </div>
                 <div class="social-links" role="navigation" aria-label="Social Media Links">
                     <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>

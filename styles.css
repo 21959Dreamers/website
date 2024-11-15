@@ -431,3 +431,54 @@ footer a:hover {
         grid-template-columns: 1fr;
     }
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #000000;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+}
+
+.language-options {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.language-toggle {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.language-button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid var(--green);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.language-button:hover {
+    background-color: var(--green);
+    color: #fff;
+}
